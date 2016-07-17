@@ -1,5 +1,5 @@
 <?php
-
+require_once( 'http://plugins/wp-includes/pluggable.php' );
 class Sws_Eye_Candy_Theme {
 	
 	/**
@@ -16,7 +16,10 @@ class Sws_Eye_Candy_Theme {
 	);
 
 	function __construct() {
+		// Add schemes to admin
 		add_action( 'admin_init' , array( $this, 'add_color_schemes' ) );
+		// Add assets for schemes
+		add_action( 'admin_enqueue_scripts' , array( $this, 'add_theme_assets' ) );
 	}
 
 	/**
@@ -27,6 +30,8 @@ class Sws_Eye_Candy_Theme {
 		/**
 		 * Add Eye Candy Light
 		 */ 
+		
+	if ( 'eye_candy_light' )
 		wp_admin_css_color(
 			'eye_candy_light', __( 'Eye Candy Light', 'eye_candy' ),
 			plugins_url( "colors/light/css/eye-candy-light.css", __DIR__ ),
@@ -36,10 +41,19 @@ class Sws_Eye_Candy_Theme {
 
 	}
 
+	function add_theme_assets()	{
+		$current_color = get_user_option( 'admin_color', get_current_user_id() );
+		if ( $current_color === 'eye_candy_light' ) {
+			wp_register_script( 'sws-buttons', plugins_url( 'colors/light/js/buttons.js', __DIR__ ), array( 'jquery' ) );
+
+			wp_enqueue_script( 'sws-buttons' );
+		}
+	}
+
 }
 
 global $spl_colors;
 $spl_colors = new Sws_Eye_Candy_Theme;
 
-$current_color = get_user_option( 'admin_color', get_current_user_id() );
-pr($current_color);
+// phpinfo();
+// pr( $current_color );

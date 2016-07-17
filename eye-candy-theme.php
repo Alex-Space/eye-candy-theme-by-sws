@@ -6,6 +6,13 @@
 * Author URI: spwanderer@mail.ru
 * Version: 1.0
 */
+
+function pr( $val ) {
+	echo '<pre class="debugger">';
+	print_r( $val );
+	echo '</pre>';
+}
+
 define( 'SWS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SWS_PLUGIN_URL', __FILE__ );
 define( 'SWS_PLUGIN_NAME', 'Eye-candy theme by SWS' );
