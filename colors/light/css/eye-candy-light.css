@@ -1,36 +1,41 @@
-/* line 16, ../scss/eye-candy-light.scss */
+/* line 17, ../scss/eye-candy-light.scss */
 body {
   background: #f1f1f1;
   color: #555;
 }
 
-/* line 21, ../scss/eye-candy-light.scss */
+/* line 22, ../scss/eye-candy-light.scss */
 a:hover {
   cursor: pointer;
 }
 
-/* line 25, ../scss/eye-candy-light.scss */
+/* line 26, ../scss/eye-candy-light.scss */
 #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
   background: #ececec;
 }
 
-/* line 29, ../scss/eye-candy-light.scss */
+/* line 30, ../scss/eye-candy-light.scss */
 .media-frame .search {
-  padding: 7px 4px;
+  padding: 9px 4px;
 }
 
-/* line 33, ../scss/eye-candy-light.scss */
+/* line 34, ../scss/eye-candy-light.scss */
+.media-frame input[type=text]:focus, .media-frame input[type=password]:focus, .media-frame input[type=number]:focus, .media-frame input[type=search]:focus, .media-frame input[type=email]:focus, .media-frame input[type=url]:focus, .media-frame select:focus, .media-frame textarea:focus {
+  border-color: #555;
+}
+
+/* line 38, ../scss/eye-candy-light.scss */
 .wp-core-ui .selected.attachment {
   box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #d3d3d3;
 }
 
-/* line 38, ../scss/eye-candy-light.scss */
+/* line 43, ../scss/eye-candy-light.scss */
 .wp-core-ui .attachment.details .check, .wp-core-ui .attachment.selected .check:focus, .wp-core-ui .media-frame.mode-grid .attachment.selected .check {
   background-color: #555;
   box-shadow: 0 0 0 1px #fff,0 0 0 2px #555;
 }
 
-/* line 44, ../scss/eye-candy-light.scss */
+/* line 49, ../scss/eye-candy-light.scss */
 #adminmenu a,
 #adminmenu div.wp-menu-image:before,
 #adminmenu .current div.wp-menu-image:before, #adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before,
@@ -43,77 +48,77 @@ a:hover {
   color: #555;
 }
 
-/* line 57, ../scss/eye-candy-light.scss */
+/* line 62, ../scss/eye-candy-light.scss */
 #adminmenu li .awaiting-mod span, #adminmenu li span.update-plugins span,
 #adminmenu .awaiting-mod, #adminmenu .update-plugins {
   border-radius: 3px;
   line-height: normal;
 }
 
-/* line 65, ../scss/eye-candy-light.scss */
+/* line 70, ../scss/eye-candy-light.scss */
 #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
   border-right-color: #ececec;
 }
 
-/* line 69, ../scss/eye-candy-light.scss */
+/* line 74, ../scss/eye-candy-light.scss */
 #adminmenu .wp-submenu li.current {
   background: #eee;
 }
 
-/* line 73, ../scss/eye-candy-light.scss */
+/* line 78, ../scss/eye-candy-light.scss */
 #adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu {
   background: #f9f9f9;
 }
 
-/* line 77, ../scss/eye-candy-light.scss */
+/* line 82, ../scss/eye-candy-light.scss */
 #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus,
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
   background-color: #dfdfdf;
   color: #555;
 }
 
-/* line 83, ../scss/eye-candy-light.scss */
+/* line 88, ../scss/eye-candy-light.scss */
 #adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before {
   color: #555;
 }
 
-/* line 87, ../scss/eye-candy-light.scss */
+/* line 92, ../scss/eye-candy-light.scss */
 input[type=radio]:checked:before,
 .filter-count .count, .title-count {
   background: #555;
 }
 
-/* line 92, ../scss/eye-candy-light.scss */
+/* line 97, ../scss/eye-candy-light.scss */
 input[type=text]:focus, input[type=search]:focus, input[type=radio]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, input[type=password]:focus, input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, select:focus, textarea:focus {
   box-shadow: none;
   border-color: #ccc;
 }
 
-/* line 97, ../scss/eye-candy-light.scss */
+/* line 102, ../scss/eye-candy-light.scss */
 #wpadminbar {
   background: #ddd;
   color: #555;
 }
 
-/* line 102, ../scss/eye-candy-light.scss */
+/* line 107, ../scss/eye-candy-light.scss */
 #wpadminbar #wp-admin-bar-user-info a {
   cursor: pointer;
 }
 
-/* line 106, ../scss/eye-candy-light.scss */
+/* line 111, ../scss/eye-candy-light.scss */
 #screen-meta,
 #contextual-help-link-wrap, #screen-options-link-wrap {
   background: #f9f9f9;
 }
 
-/* line 111, ../scss/eye-candy-light.scss */
+/* line 116, ../scss/eye-candy-light.scss */
 #wp-content-editor-tools .wp-media-buttons .button:active {
   margin-bottom: 0;
   margin-top: 0;
   position: static;
 }
 
-/* line 116, ../scss/eye-candy-light.scss */
+/* line 121, ../scss/eye-candy-light.scss */
 #wpadminbar .ab-empty-item,
 #wpadminbar a.ab-item,
 #wpadminbar > #wp-toolbar span.ab-label,
@@ -128,12 +133,12 @@ input[type=checkbox]:checked:before {
   color: #555;
 }
 
-/* line 130, ../scss/eye-candy-light.scss */
+/* line 135, ../scss/eye-candy-light.scss */
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover, #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 134, ../scss/eye-candy-light.scss */
+/* line 139, ../scss/eye-candy-light.scss */
 #wpadminbar .quicklinks > ul > li > a {
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -141,7 +146,7 @@ input[type=checkbox]:checked:before {
   margin-right: -1px;
 }
 
-/* line 141, ../scss/eye-candy-light.scss */
+/* line 146, ../scss/eye-candy-light.scss */
 #wpadminbar .ab-top-menu > li.hover > .ab-item,
 #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
 #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
@@ -154,7 +159,7 @@ input[type=checkbox]:checked:before {
   border-right: 1px solid #d3d3d3;
 }
 
-/* line 153, ../scss/eye-candy-light.scss */
+/* line 158, ../scss/eye-candy-light.scss */
 .wp-person a:focus .gravatar, a:focus, a:focus .media-icon img,
 #wpadminbar .menupop .ab-sub-wrapper,
 .wp-core-ui .button-link:focus, .wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus,
@@ -168,43 +173,51 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 #adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
 .postbox,
 .media-frame a:focus,
-.wp-core-ui .attachment.details:focus, .wp-core-ui .attachment:focus, .wp-core-ui .selected.attachment:focus {
+.wp-core-ui .attachment.details:focus, .wp-core-ui .attachment:focus, .wp-core-ui .selected.attachment:focus,
+.media-frame .embed-url input,
+.wp-core-ui .button-primary {
   box-shadow: none;
 }
 
-/* line 170, ../scss/eye-candy-light.scss */
+/* line 177, ../scss/eye-candy-light.scss */
 .wp-core-ui .attachment.details {
   webkit-box-shadow: inset 0 0 0 3px #fff,inset 0 0 0 7px #555;
   box-shadow: inset 0 0 0 3px #fff,inset 0 0 0 7px #555;
 }
 
-/* line 179, ../scss/eye-candy-light.scss */
+/* line 182, ../scss/eye-candy-light.scss */
+.wp-core-ui .media-selection .attachment.details {
+  webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #555;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #555;
+}
+
+/* line 191, ../scss/eye-candy-light.scss */
 #adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
   border: 1px solid #dfdfdf;
 }
 
-/* line 183, ../scss/eye-candy-light.scss */
+/* line 195, ../scss/eye-candy-light.scss */
 #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after {
   right: -1px;
 }
 
-/* line 187, ../scss/eye-candy-light.scss */
+/* line 199, ../scss/eye-candy-light.scss */
 #adminmenu .wp-has-submenu .wp-submenu a:hover {
   text-decoration: underline;
 }
 
-/* line 191, ../scss/eye-candy-light.scss */
+/* line 203, ../scss/eye-candy-light.scss */
 .wrap .page-title-action:focus,
 .wp-core-ui .button:active {
   border-color: #cecece;
 }
 
-/* line 196, ../scss/eye-candy-light.scss */
+/* line 208, ../scss/eye-candy-light.scss */
 input[type=text], input[type=search], input[type=radio], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=password], input[type=checkbox], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], select, textarea {
   border: 1px solid #ccc;
 }
 
-/* line 200, ../scss/eye-candy-light.scss */
+/* line 212, ../scss/eye-candy-light.scss */
 #wpadminbar .menupop .ab-sub-wrapper {
   border: 1px solid #D3D3D3;
   border-top: none;
@@ -212,23 +225,39 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
   margin-right: -1px;
 }
 
-/* line 207, ../scss/eye-candy-light.scss */
+/* line 219, ../scss/eye-candy-light.scss */
 #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper {
   border-right: none;
 }
 
-/* line 211, ../scss/eye-candy-light.scss */
+/* line 223, ../scss/eye-candy-light.scss */
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
   background: #dfdfdf;
 }
 
-/* line 215, ../scss/eye-candy-light.scss */
+/* line 227, ../scss/eye-candy-light.scss */
 .contextual-help-tabs .active {
   border-left: 2px solid #dfdfdf;
   box-shadow: none;
 }
 
-/* line 220, ../scss/eye-candy-light.scss */
+/* line 232, ../scss/eye-candy-light.scss */
+.pressthis-js-toggle .dashicons {
+  margin: 0;
+}
+
+/* line 236, ../scss/eye-candy-light.scss */
+.pressthis-js-toggle, .pressthis-js-toggle.button.button {
+  padding: 11px 12px 9px;
+}
+
+/* line 240, ../scss/eye-candy-light.scss */
+.pressthis-bookmarklet-wrapper,
+.pressthis-js-toggle, .pressthis-js-toggle.button.button {
+  vertical-align: middle;
+}
+
+/* line 245, ../scss/eye-candy-light.scss */
 .wp-core-ui .button-primary,
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary.hover,
@@ -236,42 +265,71 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 .wp-core-ui .button-primary:hover,
 .wrap .add-new-h2:hover, .wrap .page-title-action:hover,
 .wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active,
-.wp-core-ui .button-secondary:focus, .wp-core-ui .button-secondary:hover, .wp-core-ui .button.focus, .wp-core-ui .button.hover, .wp-core-ui .button:focus, .wp-core-ui .button, .wp-core-ui .button:hover {
+.wp-core-ui .button-secondary:focus, .wp-core-ui .button-secondary:hover, .wp-core-ui .button.focus, .wp-core-ui .button.hover, .wp-core-ui .button:focus, .wp-core-ui .button, .wp-core-ui .button:hover,
+#customize-theme-controls .add-new-widget,
+.wp-core-ui .button-secondary {
   background-color: #e2e2e2;
   border-color: #cecece;
   text-shadow: none;
+  min-height: 43px;
   color: #555;
-  padding: 9px 12px 7px;
   margin-top: 3px;
-  border-width: 0 1px 4px 1px;
+  border-width: 0 1px 3px 1px;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
-/* line 240, ../scss/eye-candy-light.scss */
+/* line 271, ../scss/eye-candy-light.scss */
+.wrap .page-title-action,
+.wrap .page-title-action:hover,
+.wrap .page-title-action:focus {
+  padding: 13px 12px 7px;
+}
+
+/* line 277, ../scss/eye-candy-light.scss */
 .wp-core-ui .button,
 .wp-core-ui .button:hover,
 .wp-core-ui .button:focus {
   margin-top: 0;
-  padding: 8px 12px 6px;
-  border-width: 0 1px 4px 1px;
+  border-width: 0 1px 3px 1px;
+  min-height: 43px;
 }
 
-/* line 248, ../scss/eye-candy-light.scss */
+/* line 286, ../scss/eye-candy-light.scss */
+.wp-core-ui .button {
+  min-height: 43px;
+  box-sizing: border-box;
+  border-right: 20px;
+  box-sizing: border-box;
+}
+
+/* line 293, ../scss/eye-candy-light.scss */
+.wp-core-ui .button
+#contextual-help-link-wrap, #screen-options-link-wrap {
+  height: 43px;
+}
+
+/* line 299, ../scss/eye-candy-light.scss */
+#screen-meta-links .show-settings:after {
+  bottom: 0px;
+}
+
+/* line 303, ../scss/eye-candy-light.scss */
 .wp-core-ui .button.insert-media:hover,
 .wp-core-ui .button.insert-media:hover,
 .wp-core-ui .button.insert-media {
-  padding: 6px 7px 4px 5px;
+  padding: 8px 7px 4px 5px;
 }
 
-/* line 254, ../scss/eye-candy-light.scss */
+/* line 309, ../scss/eye-candy-light.scss */
 .wp-core-ui .media-toolbar-primary .button.button-large {
   padding: 9px 12px 7px;
   margin: 13px 0;
 }
 
-/* line 259, ../scss/eye-candy-light.scss */
+/* line 314, ../scss/eye-candy-light.scss */
 .wp-core-ui .button.button-hero:hover,
 .wp-core-ui .button.button-hero:active,
 .wp-core-ui .button.button-hero:focus,
@@ -283,28 +341,39 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
   line-height: normal;
 }
 
-/* line 270, ../scss/eye-candy-light.scss */
+/* line 325, ../scss/eye-candy-light.scss */
 .wp-core-ui .button.button-small,
 .wp-core-ui .button.button-small:hover {
   vertical-align: bottom;
   height: auto;
   line-height: normal;
   padding: 1px 8px;
+  min-height: auto;
 }
 
-/* line 278, ../scss/eye-candy-light.scss */
+/* line 334, ../scss/eye-candy-light.scss */
+.wp-core-ui .button.preview {
+  padding: 13px 12px 9px;
+}
+
+/* line 338, ../scss/eye-candy-light.scss */
 #dashboard_right_now li a:before, #dashboard_right_now li span:before, .welcome-panel .welcome-icon:before {
   color: #555;
 }
 
-/* line 282, ../scss/eye-candy-light.scss */
+/* line 342, ../scss/eye-candy-light.scss */
+.wp-editor-tabs {
+  margin-top: 15px;
+}
+
+/* line 346, ../scss/eye-candy-light.scss */
 .wp-core-ui .button-secondary:active, .wp-core-ui .button.active, .wp-core-ui .button.active:hover, .wp-core-ui .button:active {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-/* line 286, ../scss/eye-candy-light.scss */
+/* line 350, ../scss/eye-candy-light.scss */
 .wrap .page-title-action,
 .wrap .page-title-action:hover,
 .wrap .page-title-action, .wrap .page-title-action:active,
@@ -322,46 +391,61 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
   vertical-align: middle;
 }
 
-/* line 303, ../scss/eye-candy-light.scss */
+/* line 367, ../scss/eye-candy-light.scss */
 .wp-core-ui .button,
 .wp-core-ui p .button {
   vertical-align: middle;
 }
 
-/* line 308, ../scss/eye-candy-light.scss */
+/* line 372, ../scss/eye-candy-light.scss */
 .wp-core-ui .button-primary:hover {
-  border-bottom-width: 4px;
+  border-bottom-width: 3px;
 }
 
-/* line 312, ../scss/eye-candy-light.scss */
+/* line 376, ../scss/eye-candy-light.scss */
 .wp-core-ui .button-primary-disabled, .wp-core-ui .button-primary.disabled, .wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary[disabled] {
   color: rgba(85, 85, 85, 0.53) !important;
   background: #ececec !important;
   border-color: #ddd !important;
 }
 
-/* line 318, ../scss/eye-candy-light.scss */
+/* line 382, ../scss/eye-candy-light.scss */
 .wrap .page-title-action:hover, .wrap .page-title-action {
-  border-bottom-width: 4px;
+  border-bottom-width: 3px;
 }
 
-/* line 322, ../scss/eye-candy-light.scss */
+/* line 386, ../scss/eye-candy-light.scss */
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary.hover,
 .wp-core-ui .button-primary:focus,
 .wp-core-ui .button-primary:hover,
 .wrap .page-title-action:hover {
-  border-bottom-width: 4px;
+  border-bottom-width: 3px;
 }
 
-/* line 330, ../scss/eye-candy-light.scss */
+/* line 394, ../scss/eye-candy-light.scss */
 .wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
   height: auto;
   width: auto;
   line-height: normal;
 }
 
-/* line 336, ../scss/eye-candy-light.scss */
+/* line 400, ../scss/eye-candy-light.scss */
+.view-switch a.current:before {
+  color: #555;
+}
+
+/* line 404, ../scss/eye-candy-light.scss */
+.wp-editor-tabs .wp-switch-editor {
+  height: 18px;
+}
+
+/* line 408, ../scss/eye-candy-light.scss */
+.wp-core-ui .button, .wp-core-ui p a.button {
+  padding: 13px 12px 9px;
+}
+
+/* line 412, ../scss/eye-candy-light.scss */
 .wp-core-ui .button-group.button-large .button,
 .wp-core-ui .button.button-large {
   height: auto;
@@ -369,12 +453,13 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
   padding: 6px 12px 4px;
 }
 
-/* line 343, ../scss/eye-candy-light.scss */
+/* line 419, ../scss/eye-candy-light.scss */
 .wp-core-ui input.button,
 .wp-core-ui input.button:hover,
 .wp-core-ui input.button:focus,
 .wp-core-ui input.button:active {
   border-radius: 50px;
+  padding: 12px 12px 9px;
   border-left-width: 2px;
   border-right-width: 2px;
   margin-right: 5px;
@@ -382,33 +467,38 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
   transition: all 0.2s;
 }
 
-/* line 358, ../scss/eye-candy-light.scss */
+/* line 435, ../scss/eye-candy-light.scss */
 .wp-core-ui input.button:focus,
 .wp-core-ui input.button:active {
   background: #d0d0d0;
   border-color: #bdbdbd;
 }
 
-/* line 364, ../scss/eye-candy-light.scss */
+/* line 441, ../scss/eye-candy-light.scss */
+#contextual-help-link-wrap, #screen-options-link-wrap {
+  min-height: 43px;
+}
+
+/* line 445, ../scss/eye-candy-light.scss */
 .wp-admin select {
-  line-height: 33px;
-  height: 33px;
+  line-height: 43px;
+  height: 43px;
   margin-bottom: 5px;
 }
 
-/* line 370, ../scss/eye-candy-light.scss */
+/* line 451, ../scss/eye-candy-light.scss */
 .search-box input[name="s"], .tablenav .search-plugins input[name="s"], .tagsdiv .newtag {
-  height: 33px;
+  height: 43px;
 }
 
-/* line 374, ../scss/eye-candy-light.scss */
+/* line 455, ../scss/eye-candy-light.scss */
 #adminmenu li.wp-menu-separator {
   background: #f9f9f9;
   margin: 0;
   padding: 0;
 }
 
-/* line 380, ../scss/eye-candy-light.scss */
+/* line 461, ../scss/eye-candy-light.scss */
 #adminmenu li.wp-menu-separator,
 #adminmenu div.separator {
   height: 0;
@@ -416,90 +506,346 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
   display: none;
 }
 
-/* line 387, ../scss/eye-candy-light.scss */
+/* line 468, ../scss/eye-candy-light.scss */
 #adminmenu li.wp-menu-separator,
 #adminmenu div.wp-menu-name {
   border-bottom: 1px solid #dfdfdf;
 }
 
-/* line 392, ../scss/eye-candy-light.scss */
+/* line 473, ../scss/eye-candy-light.scss */
 #adminmenu .wp-has-current-submenu ul > li > a:not(:first-child) {
   padding-left: 20px;
 }
 
-/* line 396, ../scss/eye-candy-light.scss */
+/* line 477, ../scss/eye-candy-light.scss */
 #adminmenuback {
   border-right: 1px solid #dfdfdf;
 }
 
-/* line 400, ../scss/eye-candy-light.scss */
+/* line 481, ../scss/eye-candy-light.scss */
 ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.current:after {
   right: -1px;
 }
 
-/* line 404, ../scss/eye-candy-light.scss */
+/* line 485, ../scss/eye-candy-light.scss */
 #collapse-menu,
 #collapse-button div:after,
 #collapse-menu:hover, #collapse-menu:hover #collapse-button div:after {
   color: #555;
 }
 
-/* line 410, ../scss/eye-candy-light.scss */
+/* line 491, ../scss/eye-candy-light.scss */
 #adminmenu .wp-first-item div.wp-menu-name {
   border-bottom: none;
 }
 
-/* line 414, ../scss/eye-candy-light.scss */
+/* line 495, ../scss/eye-candy-light.scss */
 .control-section-themes .accordion-section-title .change-theme {
   margin-top: -15px;
   font-weight: bold;
 }
 
-/* line 419, ../scss/eye-candy-light.scss */
+/* line 500, ../scss/eye-candy-light.scss */
 #adminmenu .wp-has-submenu .wp-submenu .current a:hover {
   text-decoration: none;
 }
 
-/* line 423, ../scss/eye-candy-light.scss */
+/* line 504, ../scss/eye-candy-light.scss */
 .welcome-panel {
   background: #f9f9f9;
 }
 
-/* line 427, ../scss/eye-candy-light.scss */
+/* line 508, ../scss/eye-candy-light.scss */
 .postbox {
   border: 1px solid #d3d3d3;
 }
 
-/* line 431, ../scss/eye-candy-light.scss */
+/* line 512, ../scss/eye-candy-light.scss */
 .postbox .hndle, .stuffbox .hndle {
   border-bottom: 1px solid #d3d3d3;
 }
 
-/* line 435, ../scss/eye-candy-light.scss */
+/* line 516, ../scss/eye-candy-light.scss */
 .metabox-holder .postbox > h3, .metabox-holder .stuffbox > h3, .metabox-holder h2.hndle, .metabox-holder h3.hndle,
 .comment-ays, .feature-filter, .imgedit-group, .popular-tags, .stuffbox, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
   background: #eee;
 }
 
-/* line 440, ../scss/eye-candy-light.scss */
+/* line 521, ../scss/eye-candy-light.scss */
 #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
   border: 1px solid #d3d3d3;
   box-shadow: none;
 }
 
-/* line 446, ../scss/eye-candy-light.scss */
+/* line 527, ../scss/eye-candy-light.scss */
 .column-comments .comment-count-approved, .column-comments .comment-count-no-comments, .column-response .comment-count-approved, .column-response .comment-count-no-comments {
   background: #555;
 }
 
-/* line 450, ../scss/eye-candy-light.scss */
+/* line 531, ../scss/eye-candy-light.scss */
 .wp-list-table a:hover {
   text-decoration: underline;
 }
 
-/* line 454, ../scss/eye-candy-light.scss */
+/* line 535, ../scss/eye-candy-light.scss */
 .postbox {
   background: #f9f9f9;
+}
+
+/* line 539, ../scss/eye-candy-light.scss */
+button.wp-hide-pw > .dashicons {
+  position: static;
+}
+
+/* line 543, ../scss/eye-candy-light.scss */
+button span.dashicons,
+button span.text {
+  vertical-align: middle;
+}
+
+/* line 548, ../scss/eye-candy-light.scss */
+#footer-thankyou {
+  display: none;
+}
+
+/* line 552, ../scss/eye-candy-light.scss */
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.current:after {
+  right: 20px;
+  top: 16px;
+  content: "\f347";
+  font-family: dashicons;
+  border: 0;
+}
+
+/* line 560, ../scss/eye-candy-light.scss */
+#wp-link .query-notice .query-notice-default, #wp-link .query-notice .query-notice-hint {
+  border-left: 4px solid #e1e1e1;
+}
+
+/* line 564, ../scss/eye-candy-light.scss */
+#wp-content-editor-container .button {
+  border-radius: 3px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  height: auto;
+  line-height: normal;
+  min-height: 25px;
+}
+
+/* line 573, ../scss/eye-candy-light.scss */
+#wp-link-wrap #wp-link .query-notice .query-notice-default, #wp-link .query-notice .query-notice-hint {
+  border-color: #dfdfdf;
+}
+
+/* line 577, ../scss/eye-candy-light.scss */
+.wp-core-ui .quicktags-toolbar input.button.button-small {
+  border-radius: 3px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  height: 26px;
+  line-height: 26px;
+  min-height: 26px;
+}
+
+/* line 586, ../scss/eye-candy-light.scss */
+.spinner {
+  margin: 12px 10px 0;
+}
+
+/* line 590, ../scss/eye-candy-light.scss */
+.notice-success, div.updated {
+  border-left-color: #9ab87c;
+}
+
+/* line 594, ../scss/eye-candy-light.scss */
+.js .postbox .handlediv:focus .toggle-indicator:before {
+  box-shadow: 0 0 0 1px #555, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+}
+
+/* line 599, ../scss/eye-candy-light.scss */
+.theme-browser .theme.add-new-theme a:focus:after, .theme-browser .theme.add-new-theme a:hover:after {
+  border-color: #555;
+  color: #555;
+  background: #f9f9f9;
+}
+
+/* line 605, ../scss/eye-candy-light.scss */
+.theme-browser .theme.add-new-theme a:focus span:after, .theme-browser .theme.add-new-theme a:hover span:after,
+.theme-browser .theme.add-new-theme a:focus .theme-name, .theme-browser .theme.add-new-theme a:hover .theme-name,
+.wp-filter .drawer-toggle:hover, .wp-filter .drawer-toggle:hover:before,
+.filter-links li > a:focus, .filter-links li > a:hover, .show-filters .filter-links a.current:focus, .show-filters .filter-links a.current:hover,
+.wp-filter .drawer-toggle:hover, .wp-filter .drawer-toggle:hover:before {
+  color: #555;
+}
+
+/* line 613, ../scss/eye-candy-light.scss */
+.show-filters .wp-filter .drawer-toggle:focus, .show-filters .wp-filter .drawer-toggle:hover,
+.show-filters .wp-filter .drawer-toggle:before,
+.show-filters .wp-filter .drawer-toggle {
+  background: #ddd;
+  color: #555;
+}
+
+/* line 620, ../scss/eye-candy-light.scss */
+.filter-links .current,
+.wp-full-overlay-footer .devices button.active,
+.wp-full-overlay-footer .devices button:focus {
+  border-color: #555;
+}
+
+/* line 626, ../scss/eye-candy-light.scss */
+.theme-browser .theme.add-new-theme a:focus span:after, .theme-browser .theme.add-new-theme a:hover span:after {
+  color: #555;
+  background: #ececec;
+}
+
+/* line 631, ../scss/eye-candy-light.scss */
+.theme-browser .theme .theme-actions,
+.theme-browser .theme.active .theme-actions {
+  padding: 9px 5px 0;
+  bottom: 5px;
+  background: transparent;
+}
+
+/* line 638, ../scss/eye-candy-light.scss */
+.theme-browser .theme:focus {
+  border-color: #555;
+  box-shadow: 0 0 2px #555;
+}
+
+/* line 644, ../scss/eye-candy-light.scss */
+.theme-browser .theme .theme-installed {
+  background: #eee;
+  color: #555;
+  border-color: #ddd;
+}
+
+/* line 650, ../scss/eye-candy-light.scss */
+.theme-install-overlay .wp-full-overlay-header .theme-install {
+  line-height: normal;
+  min-height: auto;
+}
+
+/* line 655, ../scss/eye-candy-light.scss */
+.theme-install-overlay .wp-full-overlay-header .theme-install {
+  margin: 4px 10px 0 0;
+}
+
+/* line 659, ../scss/eye-candy-light.scss */
+#customize-header-actions .button-primary {
+  margin-top: 5px;
+}
+
+/* line 663, ../scss/eye-candy-light.scss */
+#customize-controls .customize-info .customize-help-toggle:focus, #customize-controls .customize-info .customize-help-toggle:hover, #customize-controls .customize-info.open .customize-help-toggle,
+.wp-core-ui .wp-full-overlay .collapse-sidebar,
+.wp-core-ui .wp-full-overlay .collapse-sidebar:focus, .wp-core-ui .wp-full-overlay .collapse-sidebar:hover,
+.wp-full-overlay-footer .devices button.active:before, .wp-full-overlay-footer .devices button:focus:before, .wp-full-overlay-footer .devices button:hover:before,
+.reorder-toggle:active .reorder-done, .reorder-toggle:focus .reorder-done, .reorder-toggle:hover .reorder-done,
+.reorder-toggle:hover,
+.reorder-toggle {
+  color: #555;
+}
+
+/* line 673, ../scss/eye-candy-light.scss */
+.wp-core-ui .button-link:focus {
+  outline: #555 solid 1px;
+}
+
+/* line 677, ../scss/eye-candy-light.scss */
+.wp-core-ui .button-link:focus, .wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus {
+  -webkit-box-shadow: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 683, ../scss/eye-candy-light.scss */
+.form-invalid input[type="submit"], .form-invalid input[type="submit"]:focus, .form-invalid select, .form-invalid select:focus {
+  border-color: #cecece !important;
+  box-shadow: none;
+}
+
+/* line 689, ../scss/eye-candy-light.scss */
+.nav-menus-php .item-edit {
+  font-size: 0.1px;
+}
+
+/* line 693, ../scss/eye-candy-light.scss */
+.nav-menus-php .submitbox .submitcancel {
+  border: none;
+}
+
+/* line 697, ../scss/eye-candy-light.scss */
+.nav-menus-php .submitbox .submitcancel:hover {
+  background: none;
+  color: #0073aa;
+}
+
+/* line 702, ../scss/eye-candy-light.scss */
+.locations-row-links {
+  margin: 10px 0 0 6px;
+}
+
+/* line 706, ../scss/eye-candy-light.scss */
+.plugin-update-tr.active td, .plugins .active th.check-column {
+  border-left: 4px solid #555;
+}
+
+/* line 710, ../scss/eye-candy-light.scss */
+#available-menu-items .item-add:focus:before, #available-menu-items-search .clear-results:focus, #customize-controls .customize-info .customize-help-toggle:focus:before, .customize-screen-options-toggle:focus:before, .menu-delete:focus, .menu-item-bar .item-delete:focus:before, .wp-customizer .menu-item .submitbox .submitdelete:focus, .wp-customizer button:focus .toggle-indicator:after,
+.wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow, .wp-full-overlay .collapse-sidebar:hover .collapse-sidebar-arrow {
+  box-shadow: 0 0 0 1px #555, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+}
+
+/* line 716, ../scss/eye-candy-light.scss */
+.wp-core-ui .wp-full-overlay .collapse-sidebar {
+  padding: 0;
+  min-height: auto;
+  line-height: normal;
+  text-transform: none;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* line 725, ../scss/eye-candy-light.scss */
+#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  filter: alpha(opacity=0);
+  -ms-transform: perspective(7px) rotateX(-50deg);
+  -webkit-transform: perspective(7px) rotateX(-50deg);
+          transform: perspective(7px) rotateX(-50deg);
+  -webkit-transform-origin: center top 0px;
+          transform-origin: center top 0px;
+  -ms-transform-origin: center top 0px;
+  -moz-transform-origin: center top 0px;
+  -o-transform-origin: center top 0px;
+  border-top: none;
+  left: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 747, ../scss/eye-candy-light.scss */
+#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper ul, #wpadminbar #wp-admin-bar-user-actions.ab-submenu {
+  padding: 0 !important;
+}
+
+/* line 750, ../scss/eye-candy-light.scss */
+#wpadminbar ul#wp-admin-bar-root-default > li:hover .ab-sub-wrapper, #wpadminbar .quicklinks .ab-top-secondary > li:hover .ab-sub-wrapper {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: perspective(150px) rotateX(0deg);
+  -webkit-transform: perspective(150px) rotateX(0deg);
+          transform: perspective(150px) rotateX(0deg);
+}
+
+/* line 760, ../scss/eye-candy-light.scss */
+#wpadminbar .ab-top-menu > #wp-admin-bar-my-account > .ab-sub-wrapper {
+  right: 0;
+  left: auto;
 }
 
 /* Buttons */
