@@ -1,22 +1,14 @@
 <?php 
 /*
 * Plugin name: Eye-candy theme by SWS
-* Description: The best Admin Theme for WordPress
+* Description: It is admin color theme. It provides very soft color scheme and few options to customize WordPress admin. It developed specially for users who spend a lot of time in admin. This theme prevents eyes irritation with calm & softy colors.
 * Author: Alex Space
 * Author URI: spwanderer@mail.ru
 * Version: 1.0
 */
 
-function pr( $val ) {
-	echo '<pre class="debugger">';
-	print_r( $val );
-	echo '</pre>';
-}
+define( 'SWS_EYE_CANDY_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
-define( 'SWS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'SWS_PLUGIN_URL', __FILE__ );
-define( 'SWS_PLUGIN_NAME', 'Eye-candy theme by SWS' );
-
-require_once( SWS_PLUGIN_DIR .  'includes/init.php' );
-require_once( SWS_PLUGIN_DIR .  'includes/options-page.php' );
-require_once( SWS_PLUGIN_DIR .  'includes/add-logo-admin-menu.php' );
+require_once( SWS_EYE_CANDY_PLUGIN_DIR .  'includes/init.php' );
+require_once( SWS_EYE_CANDY_PLUGIN_DIR .  'includes/options-page.php' );
+require_once( SWS_EYE_CANDY_PLUGIN_DIR .  'includes/options-page-style.php' );

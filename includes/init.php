@@ -45,13 +45,16 @@ class Sws_Eye_Candy_Theme {
 		 * Add Eye Candy Light
 		 */ 
 		
-	if ( 'eye_candy_light' )
-		wp_admin_css_color(
-			'eye_candy_light', __( 'Eye Candy Light', 'eye_candy' ),
-			plugins_url( "colors/light/css/eye-candy-light.css", __DIR__ ),
-			array( '#555555', '#dddddd', '#f1f1f1', '#f6fbfd' ),
-			array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
-		);
+		if ( 'eye_candy_light' ) {
+
+			wp_admin_css_color(
+				'eye_candy_light', __( 'Eye Candy Light', 'eye_candy' ),
+				plugins_url( "colors/light/css/eye-candy-light.css", __DIR__ ),
+				array( '#555555', '#dddddd', '#f1f1f1', '#f6fbfd' ),
+				array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
+			);
+
+		}
 
 	}
 
@@ -74,6 +77,8 @@ class Sws_Eye_Candy_Theme {
 		wp_enqueue_media();
 
 	}
+
+
 
 }
 
