@@ -855,12 +855,22 @@ body:not(.folded) #adminmenu li:not(.wp-menu-open) .wp-submenu {
   transition: all 0.3s;
 }
 
-/* line 773, ../scss/eye-candy-light.scss */
+@-moz-document url-prefix() {
+  /* line 774, ../scss/eye-candy-light.scss */
+  body:not(.folded) #adminmenu li:not(.wp-menu-open) .wp-submenu {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+/* line 788, ../scss/eye-candy-light.scss */
 #wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper ul, #wpadminbar #wp-admin-bar-user-actions.ab-submenu {
   padding: 0 !important;
 }
 
-/* line 777, ../scss/eye-candy-light.scss */
+/* line 792, ../scss/eye-candy-light.scss */
 #wpadminbar ul#wp-admin-bar-root-default > li:hover .ab-sub-wrapper, #wpadminbar .quicklinks .ab-top-secondary > li:hover .ab-sub-wrapper {
   visibility: visible;
   opacity: 1;
@@ -870,7 +880,7 @@ body:not(.folded) #adminmenu li:not(.wp-menu-open) .wp-submenu {
           transform: perspective(150px) rotateX(0deg);
 }
 
-/* line 787, ../scss/eye-candy-light.scss */
+/* line 802, ../scss/eye-candy-light.scss */
 body:not(.folded) #adminmenu li.wp-has-submenu:hover .wp-submenu {
   visibility: visible;
   opacity: 1;
@@ -880,24 +890,24 @@ body:not(.folded) #adminmenu li.wp-has-submenu:hover .wp-submenu {
   transform: perspective(150px) rotateX(0deg);
 }
 
-/* line 796, ../scss/eye-candy-light.scss */
+/* line 811, ../scss/eye-candy-light.scss */
 body.folded #adminmenu .wp-submenu .wp-submenu-head {
   color: #555;
   background: #d3d3d3;
 }
 
-/* line 801, ../scss/eye-candy-light.scss */
+/* line 816, ../scss/eye-candy-light.scss */
 body.folded #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
   border-right-color: #d3d3d3;
 }
 
-/* line 805, ../scss/eye-candy-light.scss */
+/* line 820, ../scss/eye-candy-light.scss */
 #wpadminbar .ab-top-menu > #wp-admin-bar-my-account > .ab-sub-wrapper {
   right: 0;
   left: auto;
 }
 
-/* line 810, ../scss/eye-candy-light.scss */
+/* line 825, ../scss/eye-candy-light.scss */
 .wp-core-ui .customize-theme,
 .wp-core-ui .customize-theme:hover,
 .wp-core-ui .customize-theme:active,
@@ -906,36 +916,36 @@ body.folded #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:af
   min-height: auto;
 }
 
-/* line 818, ../scss/eye-candy-light.scss */
+/* line 833, ../scss/eye-candy-light.scss */
 .theme-browser .theme .theme-actions {
   border-left: 0;
 }
 
-/* line 822, ../scss/eye-candy-light.scss */
+/* line 837, ../scss/eye-candy-light.scss */
 .wp-full-overlay-sidebar .wp-full-overlay-header,
 .customize-controls-close {
   height: 53px;
   line-height: 53px;
 }
 
-/* line 828, ../scss/eye-candy-light.scss */
+/* line 843, ../scss/eye-candy-light.scss */
 .customize-controls-close:before {
   top: 6px;
 }
 
-/* line 832, ../scss/eye-candy-light.scss */
+/* line 847, ../scss/eye-candy-light.scss */
 .wp-full-overlay-sidebar .wp-full-overlay-sidebar-content {
   top: 53px;
 }
 
-/* line 836, ../scss/eye-candy-light.scss */
+/* line 851, ../scss/eye-candy-light.scss */
 .themes-php .wp-filter-search,
 .wp-filter .search-form input[type=search],
 input[type=search] {
   height: 43px;
 }
 
-/* line 842, ../scss/eye-candy-light.scss */
+/* line 857, ../scss/eye-candy-light.scss */
 .theme-actions .button:hover,
 .theme-actions .button:focus,
 .theme-actions .button:active,
@@ -945,7 +955,7 @@ input[type=search] {
   margin-top: 4px;
 }
 
-/* line 851, ../scss/eye-candy-light.scss */
+/* line 866, ../scss/eye-candy-light.scss */
 body:not(.folded) #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after {
   right: 17px;
   top: 9px;
@@ -955,35 +965,35 @@ body:not(.folded) #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:afte
   border: none;
 }
 
-/* line 860, ../scss/eye-candy-light.scss */
+/* line 875, ../scss/eye-candy-light.scss */
 h1, h2, h3 {
   color: #555;
 }
 
-/* line 864, ../scss/eye-candy-light.scss */
+/* line 879, ../scss/eye-candy-light.scss */
 .appearance_page_eye-candy-settings .form-table th {
   vertical-align: middle;
 }
 
 @media screen and (min-width: 783px) {
-  /* line 868, ../scss/eye-candy-light.scss */
+  /* line 883, ../scss/eye-candy-light.scss */
   .appearance_page_eye-candy-settings .form-table td:first-of-type {
     width: 20%;
   }
 }
 
-/* line 874, ../scss/eye-candy-light.scss */
+/* line 889, ../scss/eye-candy-light.scss */
 .appearance_page_eye-candy-settings .form-table span {
   display: block;
   font-weight: bold;
 }
 
-/* line 879, ../scss/eye-candy-light.scss */
+/* line 894, ../scss/eye-candy-light.scss */
 .appearance_page_eye-candy-settings .form-table p {
   margin-bottom: 15px;
 }
 
-/* line 883, ../scss/eye-candy-light.scss */
+/* line 898, ../scss/eye-candy-light.scss */
 .sws-eye-candy-thumb {
   border: 1px solid #555;
   padding: 5px;
@@ -991,25 +1001,25 @@ h1, h2, h3 {
   height: auto;
 }
 
-/* line 890, ../scss/eye-candy-light.scss */
+/* line 905, ../scss/eye-candy-light.scss */
 .sws-thumb-box {
   position: relative;
   max-width: 200px;
 }
 
-/* line 895, ../scss/eye-candy-light.scss */
+/* line 910, ../scss/eye-candy-light.scss */
 .button span {
   vertical-align: middle;
 }
 
-/* line 899, ../scss/eye-candy-light.scss */
+/* line 914, ../scss/eye-candy-light.scss */
 .button .dashicons, .button .dashicons-before:before {
   width: 17px;
   height: 17px;
   font-size: 17px;
 }
 
-/* line 905, ../scss/eye-candy-light.scss */
+/* line 920, ../scss/eye-candy-light.scss */
 .sws-thumb-box i {
   cursor: pointer;
   position: absolute;
@@ -1024,9 +1034,25 @@ h1, h2, h3 {
   color: #555;
 }
 
-/* line 919, ../scss/eye-candy-light.scss */
+/* line 934, ../scss/eye-candy-light.scss */
 #adminmenu {
   margin-top: 0;
+}
+
+/* line 938, ../scss/eye-candy-light.scss */
+.tablenav .tablenav-pages {
+  margin-top: 12px;
+}
+
+/* line 942, ../scss/eye-candy-light.scss */
+.folded #adminmenu div.wp-menu-image,
+.folded #adminmenuback {
+  width: 34px;
+}
+
+/* line 947, ../scss/eye-candy-light.scss */
+#adminmenu li .awaiting-mod span, #adminmenu li span.update-plugins span {
+  padding: 2px 6px;
 }
 
 /* Buttons */

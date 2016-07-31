@@ -109,7 +109,7 @@ function sws_options_page_callback() {
 						<label>
 							<span>Logo height</span>
 							<input type="text" value="<?php echo $user_menu_logo_height; ?>" placeholder="For examle: 40, 100, 20" name="sws-eye-candy-options[menu_logo_height]">
-							<p><i>Set it manualy</i></p>
+							<p><i>Set it manualy! Without it logo will be hidden</i></p>
 						</label>
 						<label>
 							<input type="checkbox" name="sws-eye-candy-options[menu_logo_paddings]" <?php echo $menu_logo_paddings; ?>>

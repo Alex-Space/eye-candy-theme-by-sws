@@ -1,5 +1,5 @@
 <?php
-require_once( 'http://plugins/wp-includes/pluggable.php' );
+
 class Sws_Eye_Candy_Theme {
 	
 	/**
@@ -8,7 +8,7 @@ class Sws_Eye_Candy_Theme {
 	 * @since 1.0
 	 * @access private
 	 * @var array $colors List of colors registered in this plugin.
-	 *                    Needed for registering colors-fresh dependency.
+	 * Needed for registering colors-fresh dependency.
 	 */
 
 	private $colors = array(

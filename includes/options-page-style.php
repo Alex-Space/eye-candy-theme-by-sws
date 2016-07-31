@@ -13,12 +13,12 @@ function sws_admin_custom_styles() {
 	echo '
 		<style>
 
-			#adminmenuwrap {
+			body:not(.folded) #adminmenuwrap {
 				background: url(' . $logo_image . ') ' . $menu_logo_paddings . ' no-repeat;
 				padding-top: ' . $logo_height . 'px;
 			}
 
-			body {
+			html, body {
 				background: url(' . $body_bg . ');
 			}
 

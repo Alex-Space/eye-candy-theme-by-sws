@@ -770,6 +770,21 @@ body:not(.folded) #adminmenu li:not(.wp-menu-open) .wp-submenu {
 	transition: all 0.3s;
 }
 
+@-moz-document url-prefix() {
+	body:not(.folded) #adminmenu li:not(.wp-menu-open) .wp-submenu {
+		-webkit-transform: none;
+		   -moz-transform: none;
+		    -ms-transform: none;
+		     -o-transform: none;
+		        transform: none;
+		-webkit-transition: none;
+		   -moz-transition: none;
+		    -ms-transition: none;
+		     -o-transition: none;
+		        transition: none;
+	}
+}
+
 #wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper ul, #wpadminbar #wp-admin-bar-user-actions.ab-submenu {
 	padding: 0 !important;
 }
@@ -920,6 +935,18 @@ h1, h2, h3 {
 	margin-top: 0;
 }
 
+.tablenav .tablenav-pages {
+	margin-top: 12px;
+}
+
+.folded #adminmenu div.wp-menu-image,
+.folded #adminmenuback {
+	width: 34px;
+}
+
+#adminmenu li .awaiting-mod span, #adminmenu li span.update-plugins span {
+	padding: 2px 6px;
+}
+
 /* Buttons */
 @import 'buttons.scss';
-
