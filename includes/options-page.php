@@ -37,7 +37,13 @@ add_filter( 'custom_menu_order', 'sws_eye_candy_submenu_order' );
 
 // Submenu view
 function sws_options_page_callback() {
-	
+
+	// Verify nonce
+	if ( ! isset( $_POST ) && ! isset( $_POST['sws_eye_candy_options'] ) && ! wp_verify_nonce( $_POST['sws_eye_candy_options'], 'sws_eye_candy_options_action' ) ) {
+		print 'Sorry, your nonce did not verify.';
+		exit;
+	}
+
 	if ( isset( $_POST['refresh-page'] ) && $_POST['refresh-page'] === 'on' ) {
 		?>
 		<script>
@@ -127,7 +133,7 @@ function sws_options_page_callback() {
 						<button class="button">Save settings</button>
 					</th>
 				</tr>
-				
+				<?php wp_nonce_field( 'sws_eye_candy_options_action', 'sws_eye_candy_options' ); ?>
 			</table>
 		</form>
 
