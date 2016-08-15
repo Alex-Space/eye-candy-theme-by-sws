@@ -1,8 +1,15 @@
+/* Buttons */
+@import 'buttons.scss';
+
 $main_bg: #f1f1f1;
 $main_color: #555;
 $main_color_active: #dfdfdf;
+
 $white: #f9f9f9;
 $mint: #9ab87c;
+$red_error: #de5547;
+$red_links: #de5454;
+$teal: #56a494;
 
 $secondary_bg: #ddd;
 $button_bg: #eee;
@@ -21,6 +28,11 @@ body {
 
 a:hover {
 	cursor: pointer;
+}
+
+.wplv-module--error-legends li.php-fatal-error .count,
+#wp-admin-bar-wplv-menu .error-count.has-errors, #wplv-container .error-count.has-errors, #wplv-dashboard-widget-container .error-count.has-errors {
+	background: $red_error!important;
 }
 
 #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
@@ -66,6 +78,9 @@ a:hover {
     line-height: normal;
 }
 
+#bulk-titles div a:hover:before, .tagchecklist span a:hover:before, .welcome-panel .welcome-panel-close:focus:before, .welcome-panel .welcome-panel-close:hover:before {
+	color: #d87373;
+}
 
 #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
 	border-right-color: $disabled_bg;
@@ -118,9 +133,9 @@ input[type=text]:focus, input[type=search]:focus, input[type=radio]:focus, input
 	margin-top: 0;
 	position: static;
 }
-#wpadminbar .ab-empty-item, 
-#wpadminbar a.ab-item, 
-#wpadminbar>#wp-toolbar span.ab-label, 
+#wpadminbar .ab-empty-item,
+#wpadminbar a.ab-item,
+#wpadminbar>#wp-toolbar span.ab-label,
 #wpadminbar>#wp-toolbar span.noticon,
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar li #adminbarsearch.adminbar-focused:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover #adminbarsearch:before, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar li #adminbarsearch.adminbar-focused:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover #adminbarsearch:before, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
@@ -143,11 +158,11 @@ input[type=checkbox]:checked:before {
 	margin-right: -1px;
 }
 
-#wpadminbar .ab-top-menu>li.hover>.ab-item, 
-#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, 
-#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, 
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
 #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus,
-#wpadminbar .menupop .ab-sub-wrapper, 
+#wpadminbar .menupop .ab-sub-wrapper,
 #wpadminbar .shortlink-input {
 	background: $main_bg;
 	color: $main_color;
@@ -185,7 +200,7 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 }
 
 .wp-core-ui .attachment.details .check, .wp-core-ui .attachment.selected .check:focus, .wp-core-ui .media-frame.mode-grid .attachment.selected .check {
-	
+
 }
 
 #adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu {
@@ -243,9 +258,9 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 }
 
 .wp-core-ui .button-primary,
-.wp-core-ui .button-primary.focus, 
-.wp-core-ui .button-primary.hover, 
-.wp-core-ui .button-primary:focus, 
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
 .wp-core-ui .button-primary:hover,
 .wrap .add-new-h2:hover, .wrap .page-title-action:hover,
 .wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active,
@@ -255,10 +270,7 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 	background-color: $bg_color_buttons;
     border-color: $border_color_dark;
     text-shadow: none;
-    min-height: 43px;
     color: $main_color;
-    // padding: 9px 12px 7px;
-    margin-top: 3px;
     border-width: 0 1px 3px 1px;
     font-size: 11px;
     font-weight: bold;
@@ -271,27 +283,20 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 .wrap .page-title-action,
 .wrap .page-title-action:hover,
 .wrap .page-title-action:focus {
-	padding: 13px 12px 7px;
+	padding: 8px 12px 7px;
 }
 
-.wp-core-ui .button,
-.wp-core-ui .button:hover,
-.wp-core-ui .button:focus {
-	margin-top: 0;
-	// padding: 11px 12px 9px;
+.wp-core-ui .media-toolbar .button,
+.wp-core-ui .media-toolbar .button:hover,
+.wp-core-ui .media-toolbar .button:focus {
+	margin-top: 11px;
+	margin-bottom: 11px;
 	border-width: 0 1px 3px 1px;
-	min-height: 43px;
+	transition: none;
 }
 
 .wp-core-ui .button {
-	min-height: 43px;
 	box-sizing: border-box;
-}
-
-.wp-core-ui .button 
-
-#contextual-help-link-wrap, #screen-options-link-wrap {
-	height: 43px;
 }
 
 #screen-meta-links .show-settings:after {
@@ -306,7 +311,7 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 
 .wp-core-ui .media-toolbar-primary .button.button-large {
 	padding: 9px 12px 7px;
-	margin: 13px 0;
+	margin: 13px 5px;
 }
 
 .wp-core-ui .button.button-hero:hover,
@@ -330,7 +335,7 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 }
 
 .wp-core-ui .button.preview{
-	padding: 13px 12px 9px;
+	padding: 8px 12px 6px;
 }
 
 #dashboard_right_now li a:before, #dashboard_right_now li span:before, .welcome-panel .welcome-icon:before {
@@ -349,12 +354,12 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 .wrap .page-title-action:hover,
 .wrap .page-title-action, .wrap .page-title-action:active ,
 .wp-core-ui .button-secondary:focus, .wp-core-ui .button-secondary:hover, .wp-core-ui .button.focus, .wp-core-ui .button.hover, .wp-core-ui .button:focus, .wp-core-ui .button:hover,
-.wp-core-ui .button-primary.active, 
-.wp-core-ui .button-primary.active:focus, 
-.wp-core-ui .button-primary.active:hover, 
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary:active,
-.wp-core-ui .button-primary.focus, 
-.wp-core-ui .button-primary.hover, 
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
 .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover,
 .wp-core-ui .button-primary:focus {
 	background: #e2e0e0;
@@ -379,11 +384,14 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 
 .wrap .page-title-action:hover, .wrap .page-title-action {
 	border-bottom-width: 3px;
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	border-style: solid;
 }
 
-.wp-core-ui .button-primary.focus, 
-.wp-core-ui .button-primary.hover, 
-.wp-core-ui .button-primary:focus, 
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
 .wp-core-ui .button-primary:hover,
 .wrap .page-title-action:hover{
 	border-bottom-width: 3px;
@@ -404,24 +412,21 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 }
 
 .wp-core-ui .button, .wp-core-ui p a.button {
-	padding: 13px 12px 10px;
+	padding: 8px 12px 6px;
 }
 
-.wp-core-ui .button-group.button-large .button, 
+.wp-core-ui .button-group.button-large .button,
 .wp-core-ui .button.button-large {
 	height: auto;
 	line-height: normal;
-	padding: 6px 12px 4px;
+	padding: 7px 12px 5px;
 }
 
 .wp-core-ui input.button,
 .wp-core-ui input.button:hover,
 .wp-core-ui input.button:focus,
 .wp-core-ui input.button:active {
-	border-radius: 50px;
-	padding: 12px 12px 9px;
-	border-left-width: 2px;
-	border-right-width: 2px;
+	padding: 8px 12px 6px;
 	margin-right: 5px;
 	-webkit-transition: all 0.2s;
 	   -moz-transition: all 0.2s;
@@ -446,18 +451,15 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 	line-height: normal;
 }
 
-#contextual-help-link-wrap, #screen-options-link-wrap {
-	min-height: 43px;
-}
-
 .wp-admin select {
 	line-height: 43px;
-	height: 43px;
-	margin-bottom: 5px;
+	height: 32px;
 }
 
+
+
 .search-box input[name="s"], .tablenav .search-plugins input[name="s"], .tagsdiv .newtag {
-	height: 43px;
+	height: 32px;
 }
 
 #adminmenu li.wp-menu-separator {
@@ -475,7 +477,7 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 
 #adminmenu li.wp-menu-separator,
 #adminmenu div.wp-menu-name {
-	border-bottom: 1px solid $main_color_active;	
+	border-bottom: 1px solid $main_color_active;
 }
 
 #adminmenu .wp-has-current-submenu ul>li>a:not(:first-child) {
@@ -592,7 +594,7 @@ body:not(.folded) ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li
 }
 
 .spinner {
-	margin: 12px 10px 0;
+	margin: 7px 10px 0;
 }
 
 .notice-success, div.updated {
@@ -600,8 +602,12 @@ body:not(.folded) ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li
 }
 
 .js .postbox .handlediv:focus .toggle-indicator:before {
-	-webkit-box-shadow: 0 0 0 1px $main_color,0 0 2px 1px rgba(30,140,190,.8);
-    box-shadow: 0 0 0 1px $main_color,0 0 2px 1px rgba(30,140,190,.8);
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.postbox.closed {
+	border-bottom: 0;
 }
 
 .theme-browser .theme.add-new-theme a:focus:after, .theme-browser .theme.add-new-theme a:hover:after {
@@ -665,7 +671,7 @@ body:not(.folded) ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li
 }
 
 #customize-header-actions .button-primary {
-	margin-top: 5px;
+	margin-top: 8px;
 }
 
 #customize-controls .customize-info .customize-help-toggle:focus, #customize-controls .customize-info .customize-help-toggle:hover, #customize-controls .customize-info.open .customize-help-toggle,
@@ -699,12 +705,13 @@ body:not(.folded) ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li
 }
 
 .nav-menus-php .submitbox .submitcancel{
-	border: none; 
+	border: none;
 }
 
-.nav-menus-php .submitbox .submitcancel:hover{
+.nav-menus-php .submitbox .submitcancel:hover,
+.nav-menus-php .submitbox .submitcancel {
 	background: none;
-	color: #0073aa;  
+	color: $teal;
 }
 
 .locations-row-links{
@@ -713,6 +720,11 @@ body:not(.folded) ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li
 
 .plugin-update-tr.active td, .plugins .active th.check-column{
 	border-left: 4px solid #555;
+}
+
+.alignright input,
+.alignright select {
+	margin: 5px;
 }
 
 #available-menu-items .item-add:focus:before, #available-menu-items-search .clear-results:focus, #customize-controls .customize-info .customize-help-toggle:focus:before, .customize-screen-options-toggle:focus:before, .menu-delete:focus, .menu-item-bar .item-delete:focus:before, .wp-customizer .menu-item .submitbox .submitdelete:focus, .wp-customizer button:focus .toggle-indicator:after,
@@ -834,24 +846,11 @@ body.folded #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:af
 	border-left: 0;
 }
 
-.wp-full-overlay-sidebar .wp-full-overlay-header,
-.customize-controls-close {
-	height: 53px;
-	line-height: 53px;
-}
-
-.customize-controls-close:before {
-	top: 6px;
-}
-
-.wp-full-overlay-sidebar .wp-full-overlay-sidebar-content {
-	top: 53px;
-}
-
 .themes-php .wp-filter-search,
 .wp-filter .search-form input[type=search],
 input[type=search] {
-	height: 43px;
+	height: 32px;
+	vertical-align: middle;
 }
 
 .theme-actions .button:hover,
@@ -893,7 +892,7 @@ h1, h2, h3 {
 
 .appearance_page_eye-candy-settings .form-table p {
 	margin-bottom: 15px;
-} 
+}
 
 .sws-eye-candy-thumb {
 	border: 1px solid $main_color;
@@ -912,8 +911,8 @@ h1, h2, h3 {
 }
 
 .button .dashicons, .button .dashicons-before:before {
-	width: 17px;
-    height: 17px;
+	width: 15px;
+	height: 15px;
     font-size: 17px;
 }
 
@@ -931,12 +930,17 @@ h1, h2, h3 {
 	color: $main_color;
 }
 
+#adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu {
+	padding: 7px 0;
+}
+
 #adminmenu {
 	margin-top: 0;
 }
 
 .tablenav .tablenav-pages {
-	margin-top: 12px;
+	margin-top: 7px;
+	margin-bottom: 5px;
 }
 
 .folded #adminmenu div.wp-menu-image,
@@ -948,5 +952,81 @@ h1, h2, h3 {
 	padding: 2px 6px;
 }
 
-/* Buttons */
-@import 'buttons.scss';
+#adminmenu .wp-submenu li.current {
+	margin: 0 5px;
+	border-radius: 4px;
+}
+
+#adminmenu .wp-has-submenu .wp-submenu .current a {
+	padding: 5px 7px;
+}
+
+.media-modal .delete-attachment, .media-modal .trash-attachment, .media-modal .untrash-attachment {
+	color: $red_error !important;
+}
+
+.media-modal-close:hover .media-modal-icon:before {
+	color: $main_color;
+}
+
+.tablenav .tablenav-pages a:focus, .tablenav .tablenav-pages a:hover {
+	color: $white;
+	background: $main_color;
+	border-color: $main_color;
+}
+
+#all-plugins-table .plugins a.delete:hover, #media-items a.delete-permanently:hover, #media-items a.delete:hover, #nav-menu-footer .menu-delete:hover, #search-plugins-table .plugins a.delete:hover, .file-error, .plugins a.delete:hover, .row-actions .delete a:hover, .row-actions .spam a:hover, .row-actions .trash a:hover, .submitbox .submitdelete:hover, .widget-control-remove:hover, abbr.required, span.required {
+	color: $red_links;
+}
+
+.upload-php .mode-grid .media-sidebar {
+	border-left: 4px solid $red_links;
+}
+
+#the-comment-list .unapprove a {
+	color: $main_color;
+}
+
+#adminmenu li a.wp-has-current-submenu .update-plugins, #adminmenu li.current a .awaiting-mod, .column-comments .post-com-count-pending, .column-response .post-com-count-pending,
+#adminmenu .awaiting-mod, #adminmenu .update-plugins,
+.theme-browser .theme.active .theme-name {
+	background-color: $main_color;
+}
+
+.theme-browser .theme.active .theme-name,
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
+	box-shadow: none;
+}
+
+#screen-meta-links .button {
+	margin: 0;
+}
+
+div#widgets-right .sidebar-name h2, div#widgets-right .sidebar-name h3 {
+	padding: 11px 7px;
+}
+
+.accordion-section-content .submit-add-to-menu {
+	padding: 8px 10px 7px;
+}
+
+
+body.about-php #TB_closeWindowButton:focus, body.about-php #TB_closeWindowButton:hover, body.import-php #TB_closeWindowButton:focus, body.import-php #TB_closeWindowButton:hover, body.index-php #TB_closeWindowButton:focus, body.index-php #TB_closeWindowButton:hover, body.plugin-install-php #TB_closeWindowButton:focus, body.plugin-install-php #TB_closeWindowButton:hover, body.plugins-php #TB_closeWindowButton:focus, body.plugins-php #TB_closeWindowButton:hover, body.update-core-php #TB_closeWindowButton:focus, body.update-core-php #TB_closeWindowButton:hover {
+	color: $main_color;
+}
+
+.highlight {
+	background: $white;
+}
+
+.wp-filter .search-form input[type=search],
+.wp-filter .search-form input[type=search] {
+	vertical-align: top;
+}
+
+.wp-upload-form input.button,
+.wp-upload-form input.button:hover,
+.wp-upload-form input.button:focus,
+.wp-upload-form input.button:active {
+	margin-right: 0;
+}

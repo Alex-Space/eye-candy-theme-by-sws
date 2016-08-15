@@ -1,7 +1,7 @@
 <?php
 
 class Sws_Eye_Candy_Theme {
-	
+
 	/**
 	 * List of colors variations registered in this plugin.
 	 *
@@ -20,31 +20,31 @@ class Sws_Eye_Candy_Theme {
 		add_action( 'admin_init' , array( $this, 'add_color_schemes' ) );
 		// Add assets for schemes
 		add_action( 'admin_enqueue_scripts' , array( $this, 'add_theme_assets' ) );
-		
+
 		function sws_adminbar_frontend() {
-			
+
 			$selected_color_scheme = get_user_meta( get_current_user_id(), 'admin_color', true );
-			
+
 			if ( $selected_color_scheme === 'eye_candy_light' ) {
-				
+
 				wp_enqueue_style( 'sws_adminbar_scheme', plugins_url( "colors/light/css/eye-candy-light.css", __DIR__ ) );
-			 	
+
 			}
 
 		}
 		add_action( 'wp_enqueue_scripts' , 'sws_adminbar_frontend' );
-		
+
 	}
 
 	/**
 	 * Register color schemes.
 	 */
 	function add_color_schemes() {
-		
+
 		/**
 		 * Add Eye Candy Light
-		 */ 
-		
+		 */
+
 		if ( 'eye_candy_light' ) {
 
 			wp_admin_css_color(
@@ -59,11 +59,11 @@ class Sws_Eye_Candy_Theme {
 	}
 
 	function add_theme_assets()	{
-		
+
 		$current_color = get_user_option( 'admin_color', get_current_user_id() );
-		
+
 		if ( $current_color === 'eye_candy_light' ) {
-			
+
 			wp_register_script( 'sws-buttons', plugins_url( 'colors/light/js/buttons.js', __DIR__ ), array( 'jquery' ) );
 			wp_enqueue_script( 'sws-buttons' );
 

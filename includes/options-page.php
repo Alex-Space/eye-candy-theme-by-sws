@@ -10,22 +10,22 @@ add_action( 'admin_menu', 'sws_eye_candy_options_page' );
 
 // Submenu order
 function sws_eye_candy_submenu_order( $menu_ord ) {
-    
+
     global $submenu;
     $themes_submenu = $submenu['themes.php'];
     $arr = array();
 
     foreach ( $themes_submenu as $key => $value ) {
-    	
+
     	if ( $value[0] === 'Eye Candy settings' ) {
-		    
+
 		    $arr[] = $value;
 		    unset( $themes_submenu[$key] );
 
     	}
 
     }
-    
+
    	$themes_submenu = $themes_submenu + $arr;
 
     $submenu['themes.php'] = $themes_submenu;
@@ -44,20 +44,28 @@ function sws_options_page_callback() {
 		exit;
 	}
 
+	// Clear logo fields if no logo
+	if ( empty( $_POST['sws-eye-candy-options']['menu_logo'] ) ) {
+		unset( $_POST['sws-eye-candy-options']['menu_logo_height'] );
+		unset( $_POST['sws-eye-candy-options']['menu_logo_paddings'] );
+	}
+
+	// Refresh page after settings. This shows the result.
 	if ( isset( $_POST['refresh-page'] ) && $_POST['refresh-page'] === 'on' ) {
 		?>
-		<script>
-			location.reload();
-		</script>
+
+		<script>location.reload();</script>
+		
 		<?php
 	}
 
+	// Update options
 	if ( isset( $_POST['sws-eye-candy-options'] ) && ! empty( $_POST['sws-eye-candy-options'] ) ) {
 
 		update_user_meta( get_current_user_id(), 'eye_candy_options', $_POST['sws-eye-candy-options'] );
-	
+
 	}
-	
+
 	$options  = get_user_meta( get_current_user_id(), 'eye_candy_options', true );
 
 	if ( isset( $options ) && ! empty( $options ) ) {
@@ -71,9 +79,9 @@ function sws_options_page_callback() {
 
 	?>
 	<div class="wrap">
-		
+
 		<h1>Eye Candy Settings</h1>
-		
+
 		<form action="" method="post">
 			<table class="form-table">
 				<tr class="sws-admin-bg">
@@ -114,15 +122,16 @@ function sws_options_page_callback() {
 					<td>
 						<label>
 							<span>Logo height</span>
-							<input type="text" value="<?php echo $user_menu_logo_height; ?>" placeholder="For examle: 40, 100, 20" name="sws-eye-candy-options[menu_logo_height]">
-							<p><i>Set it manualy! Without it logo will be hidden</i></p>
+							<?php pr($user_menu_logo); ?>
+							<input type="text" value="<?php echo $user_menu_logo ? $user_menu_logo_height : ''; ?>" placeholder="For examle: 40, 100, 20" name="sws-eye-candy-options[menu_logo_height]">
+							<p><i>Set this manualy! Logo will be hidden without it</i></p>
 						</label>
 						<label>
 							<input type="checkbox" name="sws-eye-candy-options[menu_logo_paddings]" <?php echo $menu_logo_paddings; ?>>
 							<b>Use paddings</b>
 							<p><i>If logo sticks to edges</i></p>
 						</label>
-						
+
 					</td>
 				</tr>
 				<tr class="hidden-settings">
@@ -141,4 +150,3 @@ function sws_options_page_callback() {
 
 	<?php
 }
-
