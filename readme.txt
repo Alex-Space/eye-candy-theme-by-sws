@@ -2,7 +2,7 @@
 Contributors: AlexSpace
 Tags: admin, theme, admin theme, scheme, color scheme, custom, customize, cool, light, white, style, candy, eye
 Requires at least: 3.4.0
-Tested up to: 4.5.3
+Tested up to: 4.6
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,7 +39,7 @@ Ofcourse! If you have some issue please contact me through the email - spwandere
 1. Options page
 2. Admin dashboard view
 3. Add/Edit post view
-4. Activation in user profile 
+4. Activation in user profile
 
 == Changelog ==
 

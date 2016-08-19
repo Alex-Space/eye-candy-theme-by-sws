@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 		sws_open_media_uploader_image( $('.sws-eye-candy-select-logo-input') );
 
 	});
-
+	
     function sws_open_media_uploader_image(el) {
         media_uploader = wp.media({
             frame: "post",
@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
             var image_caption = json.caption;
             var image_title = json.title;
         	var template = _.template('<i class="dashicons dashicons-trash"></i><img src="<%= url %>" alt="" class="sws-eye-candy-thumb">');
-            
+
 	        el.val( json.sizes.full.url );
 
 	        if ( el.parents('tr').hasClass('sws-admin-bg') ) {
@@ -38,18 +38,18 @@ jQuery(document).ready(function($) {
 	        	$('.sws-eye-candy-select-logo').remove();
 	        }
         	el.parents('tr').find('.sws-thumb-box').append( template({ url: json.sizes.full.url }) );
-	        
+
         });
 
         media_uploader.open();
-        
+
     }
 
     // Remove image from options page
     $('.form-table').on('click', '.sws-thumb-box i', function() {
     	$(this).siblings('img').remove();
     	$(this).parent().siblings('input[type="hidden"]').val('');
-    	
+
     	if ( $(this).parents('tr').hasClass('sws-admin-bg') ) {
 	    	$(this).parent().prepend('<a href="#" class="sws-eye-candy-select-bg-btn button button-small">Upload background</a>');
 

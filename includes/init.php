@@ -20,19 +20,25 @@ class Sws_Eye_Candy_Theme {
 		add_action( 'admin_init' , array( $this, 'add_color_schemes' ) );
 		// Add assets for schemes
 		add_action( 'admin_enqueue_scripts' , array( $this, 'add_theme_assets' ) );
+		// Add styled admin bar to frontend
+		add_action( 'wp_enqueue_scripts' , array( $this, 'sws_adminbar_frontend' ) );
 
-		function sws_adminbar_frontend() {
+		// Add plugin link in plugins list to options page
+		add_filter( 'plugin_action_links_' . SWS_EYE_CANDY_PLUGIN_LINK, array( $this, 'add_settings_link_plugin' ) );
+	}
 
-			$selected_color_scheme = get_user_meta( get_current_user_id(), 'admin_color', true );
+	/**
+	 * Add styled admin bar to frontend
+	 */
+	function sws_adminbar_frontend() {
 
-			if ( $selected_color_scheme === 'eye_candy_light' ) {
+		$selected_color_scheme = get_user_meta( get_current_user_id(), 'admin_color', true );
 
-				wp_enqueue_style( 'sws_adminbar_scheme', plugins_url( "colors/light/css/eye-candy-light.css", __DIR__ ) );
+		if ( $selected_color_scheme === 'eye_candy_light' ) {
 
-			}
+			wp_enqueue_style( 'sws_adminbar_scheme', plugins_url( "colors/light/css/eye-candy-light.css", __DIR__ ) );
 
 		}
-		add_action( 'wp_enqueue_scripts' , 'sws_adminbar_frontend' );
 
 	}
 
@@ -41,10 +47,7 @@ class Sws_Eye_Candy_Theme {
 	 */
 	function add_color_schemes() {
 
-		/**
-		 * Add Eye Candy Light
-		 */
-
+		// Add Eye Candy Light
 		if ( 'eye_candy_light' ) {
 
 			wp_admin_css_color(
@@ -57,6 +60,16 @@ class Sws_Eye_Candy_Theme {
 		}
 
 	}
+
+	/**
+	 * Add plugin link in plugins list to options page
+	 */
+	function add_settings_link_plugin( $links ) {
+		$links[] = '<a href="'. esc_url( get_admin_url(null, 'themes.php?page=eye-candy-settings') ) .'">Settings</a>';
+		$links[] = '<a href="' . esc_url( get_admin_url(null, 'profile.php') ) . '" target="_blank">Select color scheme</a>';
+		return $links;
+	}
+
 
 	function add_theme_assets()	{
 
@@ -84,6 +97,3 @@ class Sws_Eye_Candy_Theme {
 
 global $spl_colors;
 $spl_colors = new Sws_Eye_Candy_Theme;
-
-// phpinfo();
-// pr( $current_color );

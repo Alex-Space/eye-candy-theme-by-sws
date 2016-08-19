@@ -306,7 +306,7 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 .wp-core-ui .button.insert-media:hover,
 .wp-core-ui .button.insert-media:hover,
 .wp-core-ui .button.insert-media, {
-	padding: 8px 7px 4px 5px;
+	padding: 11px 7px 4px 5px;
 }
 
 .wp-core-ui .media-toolbar-primary .button.button-large {
@@ -452,14 +452,16 @@ input[type=text], input[type=search], input[type=radio], input[type=tel], input[
 }
 
 .wp-admin select {
-	line-height: 43px;
-	height: 32px;
+	line-height: 29px;
+	height: 29px;
 }
 
-
-
 .search-box input[name="s"], .tablenav .search-plugins input[name="s"], .tagsdiv .newtag {
-	height: 32px;
+	height: 29px;
+}
+
+.tablenav-pages .current-page {
+	padding: 5px 2px 7px;
 }
 
 #adminmenu li.wp-menu-separator {
@@ -911,9 +913,9 @@ h1, h2, h3 {
 }
 
 .button .dashicons, .button .dashicons-before:before {
-	width: 15px;
-	height: 15px;
-    font-size: 17px;
+	width: 12px;
+	height: 12px;
+	font-size: 12px;
 }
 
 .sws-thumb-box i {
@@ -949,7 +951,7 @@ h1, h2, h3 {
 }
 
 #adminmenu li .awaiting-mod span, #adminmenu li span.update-plugins span {
-	padding: 2px 6px;
+	padding: 3px 6px;
 }
 
 #adminmenu .wp-submenu li.current {
