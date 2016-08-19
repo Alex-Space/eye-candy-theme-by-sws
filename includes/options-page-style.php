@@ -2,7 +2,7 @@
 /**
  * Add admin styles from options
  */
-function sws_admin_custom_styles() {
+function sws_eye_candy_admin_custom_styles() {
 
 	$options = get_user_meta( get_current_user_id(), 'eye_candy_options', true );
 	$logo_height = isset( $options['menu_logo_height'] ) && ! empty( $options['menu_logo_height'] ) ? $options['menu_logo_height'] : '0';
@@ -13,7 +13,7 @@ function sws_admin_custom_styles() {
 	echo '
 		<style>
 
-			body:not(.folded):not(.auto-fold) #adminmenuwrap {
+			body:not(.folded) #adminmenuwrap {
 				background: url(' . $logo_image . ') ' . $menu_logo_paddings . ' no-repeat;
 				padding-top: ' . $logo_height . 'px;
 			}
@@ -26,4 +26,4 @@ function sws_admin_custom_styles() {
 	';
 
 }
-add_action( 'admin_head', 'sws_admin_custom_styles' );
+add_action( 'admin_head', 'sws_eye_candy_admin_custom_styles' );
